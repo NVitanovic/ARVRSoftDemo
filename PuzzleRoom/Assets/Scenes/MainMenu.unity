@@ -4445,6 +4445,7 @@ GameObject:
   - component: {fileID: 1265950895}
   - component: {fileID: 1265950897}
   - component: {fileID: 1265950898}
+  - component: {fileID: 1265950899}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -4518,6 +4519,18 @@ MonoBehaviour:
   crouch: 1
   cam: {fileID: 963194227}
   hands: {fileID: 0}
+--- !u!114 &1265950899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265950894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2bc2b43bb25144394db7d5bde8f8dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1270682499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,7 +4664,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15298
+  m_Name: pb_Mesh15310
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
