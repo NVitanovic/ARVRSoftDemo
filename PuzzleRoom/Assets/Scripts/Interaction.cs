@@ -21,8 +21,8 @@ public class Interaction : MonoBehaviour
         var ray = playerCamera.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
 
         RaycastHit hit;
-        // Check raycast hit in distance of 1m in game units and Layer is Interactable
-        if (Physics.Raycast(ray, out hit, 1f) && hit.collider.gameObject.layer == 8)
+        // Check raycast hit in distance of 1.5m in game units and Layer is Interactable
+        if (Physics.Raycast(ray, out hit, 1.5f) && hit.collider.gameObject.layer == 8)
         {
             print("I'm looking at " + hit.transform.name);
             var objectRenderer = hit.collider.gameObject.GetComponent<Renderer>();
@@ -44,7 +44,7 @@ public class Interaction : MonoBehaviour
 
             // if the player looks into the object for more than 5 seconds
             // trigger the interactable event in the object
-            if(totalLookingTime > 5)
+            if(totalLookingTime > 3)
             {
                 lastObject.GetComponent<Renderer>().material.color = previousObjectColor;
                 hit.collider.gameObject.GetComponent<IInteractable>().Interact();
